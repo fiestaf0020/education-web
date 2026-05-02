@@ -47,7 +47,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gray-100">
       {/* 1280 x 1080 기준 작업 영역 */}
-      <section className="mx-auto min-h-screen w-full max-w-[1280px] px-5 pt-20 md:px-20 md:pt-36">
+      <section className="mx-auto min-h-screen w-full max-w-[1280px] px-5 pt-20 pb-20 md:px-20 md:pt-36 md:pb-36">
         {/* 상단 제목 영역 */}
         <header className="mb-16">
           <h1 className="text-4xl font-bold text-gray-900">
