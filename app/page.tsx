@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 
+import { useRouter } from "next/navigation";
+
 // 카테고리 데이터
 const categories = [
   {
@@ -39,6 +41,7 @@ const categories = [
 export default function Home() {
   // 현재 열린 카테고리 id 저장
   // null이면 아무 카테고리도 안 열린 상태
+  const router = useRouter();
   const [openId, setOpenId] = useState<number | null>(null);
 
   return (
@@ -101,9 +104,17 @@ export default function Home() {
                         key={content}
                         onClick={() => {
   if (content === "Content 1-1") {
-    window.open("https://www.youtube.com/watch?v=0nsuxOgzeqc&t=676s", "_black");
-  } else if (content === "Content 1-2") {
+    window.open("https://www.youtube.com/watch?v=MRDMS01PtvI", "_black");
+  }
+  if (content === "Content 1-2") {
     window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank");
+  }
+  if (content === "Content 2-1") {
+    router.push("/video/2-1");
+  }
+
+  if (content === "Content 2-2") {
+    router.push("/video/2-2");
   }
 }}
                         className="block w-full rounded-lg px-3 py-3 text-left text-gray-700 hover:bg-gray-100"
