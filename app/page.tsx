@@ -104,10 +104,10 @@ export default function Home() {
                         key={content}
                         onClick={() => {
   if (content === "Content 1-1") {
-    window.open("https://www.youtube.com/watch?v=MRDMS01PtvI", "_black");
+    window.open("https://www.youtube.com/watch?v=QUl1GwoYKXk", "_blank");
   }
   if (content === "Content 1-2") {
-    window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank");
+    window.open("https://www.youtube.com/watch?v=QUl1GwoYKXk", "_blank");
   }
   if (content === "Content 2-1") {
     router.push("/video/2-1");
