@@ -2,8 +2,8 @@ import Link from "next/link";
 
 // 영상 ID별 유튜브 embed 주소
 const videoMap: Record<string, string> = {
-  "2-1": "https://www.youtube.com/embed/MRDMS01PtvI",
-  "2-2": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+  "2-1": "https://www.youtube.com/embed/QUl1GwoYKXk",
+  "2-2": "https://www.youtube.com/embed/QUl1GwoYKXk",
 };
 
 export default async function VideoPage({
